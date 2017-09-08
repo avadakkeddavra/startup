@@ -7,6 +7,15 @@
 body {
   font-family: 'Montserrat', sans-serif !important;
 }
+.slick-prev:before,
+.slick-next:before {
+  display: none;
+}
+.slick-arrow {
+  font-size: 20px;
+  color: #fff;
+  z-index: 20;
+}
 a {
   text-decoration: none;
 }
@@ -56,6 +65,7 @@ section > p.desc {
 header {
   height: 900px;
   padding: 0px 40px;
+  overflow: hidden;
   background: url(../img/bg_2.jpg) center / cover;
   position: relative;
 }
@@ -206,4 +216,129 @@ header .phone_img {
 }
 .design .design_list .services article:last-child {
   padding-top: 0px;
+}
+.testimonials {
+  padding: 8em 0px !important;
+  background-color: #30beac !important;
+}
+.testimonials #testimonials_slider .slick-arrow {
+  color: rgba(255, 255, 255, 0.43);
+  font-size: 40px;
+  width: 40px;
+  height: 40px;
+  line-height: 40px;
+  font-weight: lighter;
+  transition: 0.3s;
+}
+.testimonials #testimonials_slider .slick-arrow.slick-prev:hover {
+  left: -35px !important;
+  color: #fff !important;
+}
+.testimonials #testimonials_slider .slick-arrow.slick-next:hover {
+  right: -35px !important;
+  color: #fff !important;
+}
+.testimonials #testimonials_slider .slick-dots {
+  bottom: -50px;
+}
+.testimonials #testimonials_slider .slick-dots li button:before {
+  font-size: 12px !important;
+  color: rgba(255, 255, 255, 0.78);
+}
+.testimonials #testimonials_slider .slick-dots li button:hover:before {
+  color: #fff !important;
+}
+.testimonials #testimonials_slider .slick-dots li.slick-active button:before {
+  color: #fff !important;
+}
+.testimonials #testimonials_slider article {
+  margin-left: 0;
+  margin-right: 0;
+}
+.testimonials #testimonials_slider article .user_photo {
+  padding-right: 90px;
+}
+.testimonials #testimonials_slider article .user_photo img {
+  border-radius: 50%;
+}
+.testimonials #testimonials_slider article .desc .testimony_content {
+  color: #fff;
+  font-size: 30px;
+  font-weight: 300;
+}
+.testimonials #testimonials_slider article .desc .user_info {
+  margin-top: 20px;
+}
+.testimonials #testimonials_slider article .desc .user_info .name {
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+.testimonials #testimonials_slider article .desc .user_info .company {
+  text-transform: uppercase;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 2px;
+  color: #fff;
+}
+.counters {
+  padding: 100px 0px;
+  background: url('../img/bg_1.jpg') fixed;
+  background-size: cover;
+}
+.counters .row {
+  margin-left: 0;
+  margin-right: 0;
+}
+.counters .count_item {
+  text-align: center;
+}
+.counters .count_item .counter {
+  font-size: 50px;
+  color: #fff;
+}
+.counters .count_item .title {
+  color: #fff;
+  font-size: 14px;
+  font-weight: 400;
+  letter-spacing: 5px;
+  margin-top: 20px;
+}
+.products .container {
+  padding: 0px;
+}
+.products .products_list {
+  margin-left: 0;
+  margin-right: 0;
+  padding: 80px 0px;
+}
+.products .products_list article {
+  padding: 0px 5px;
+  position: relative;
+  top: 0px;
+  transition: 0.3s;
+}
+.products .products_list article .desc {
+  padding: 25px 15px;
+  text-align: center;
+}
+.products .products_list article .desc .title {
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: #000;
+  padding: 10px 0px;
+}
+.products .products_list article .desc .info {
+  margin-bottom: 0px;
+  color: #919191;
+  font-weight: 400;
+  font-size: 16px;
+  margin-bottom: 20px;
+  line-height: 24px;
+}
+.products .products_list article:hover {
+  box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.15);
+  top: -10px;
 }
